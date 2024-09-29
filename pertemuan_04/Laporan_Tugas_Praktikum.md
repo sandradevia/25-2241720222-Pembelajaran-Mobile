@@ -54,8 +54,8 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
 ```dart
 final List<String?> list = List<String?>.filled(5, null);
 
-  list[1] = "Astrid Risa Widiana";  
-  list[2] = "2241720250";   
+  list[1] = "Sandra Devia Arge";  
+  list[2] = "2241720222";   
 
   print(list.length);  
   print(list[1]);      
@@ -150,11 +150,11 @@ Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua f
 **Kode Program yang ditambahkan:**
 ```dart
 // Menambahkan elemen menggunakan .add()
-  names1.add('Astrid Risa Widiana');
-  names1.add('2241720250');
+  names1.add('Sandra Devia Arge');
+  names1.add('2241720222');
 
 // Menambahkan elemen menggunakan .addAll()
-  names2.addAll({'Astrid Risa Widiana', '2241720250'});
+  names2.addAll({'Sandra Devia Arge', '2241720222'});
 ```
 **Hasil**
 
@@ -162,15 +162,15 @@ Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua f
 
 **Penjelasan:**
 
-**1. names1.add('Astrid Risa Widiana');**
+**1. names1.add('Sandra Devia Arge');**
 
 Menggunakan metode .add() untuk menambahkan elemen tunggal ke dalam set names1.
 
-**2. names1.add('2241720250');**
+**2. names1.add('2241720222');**
 
 Menambahkan elemen kedua ke dalam set names1.
 
-**3. names2.addAll({'Astrid Risa Widiana', '2241720250'});**
+**3. names2.addAll({'Sandra Devia Arge', '2241720222'});**
 
 Menggunakan metode .addAll() untuk menambahkan beberapa elemen sekaligus ke dalam set names2.
 
@@ -275,16 +275,16 @@ void main(){
   'first': 'partridge',
   'second': 'turtledoves',
   'fifth': 1,
-  'name': 'Astrid Risa Widiana', 
-  'NIM': '2241720250',   
+  'name': 'Sandra Devia Arge', 
+  'NIM': '2241720222',   
 };
 
 var nobleGases = {
   2: 'helium',
   10: 'neon',
   18: 2,
-  1: 'Astrid Risa Widiana', 
-  0: '2241720250', 
+  1: 'Sandra Devia Arge', 
+  0: '2241720222', 
 };
 
 print(gifts);
@@ -294,14 +294,14 @@ var mhs1 = Map<String, String>();
   gifts['first'] = 'partridge';
   gifts['second'] = 'turtledoves';
   gifts['fifth'] = 'golden rings';
-  mhs1['name'] = 'Astrid Risa Widiana';
+  mhs1['name'] = 'Sandra Devia Arge';
   mhs1['NIM'] = '2241720250';
 
   var mhs2 = Map<int, String>();
   nobleGases[2] = 'helium';
   nobleGases[10] = 'neon';
   nobleGases[18] = 'argon';
-  mhs2[1] = 'Astrid Risa Widiana';
+  mhs2[1] = 'Sandra Devia Arge';
   mhs2[0] = '2241720250';
 
   print(gifts);
@@ -642,7 +642,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Inisialisasi field nama
 
 **Perbaikan Kode**
 ```dart
-  var mahasiswa = ('Astrid Risa Widiana', 2241720250);
+  var mahasiswa = ('Sandra Devia Arge', 2241720222);
   print(mahasiswa);
 ```
 **Hasil**
@@ -689,7 +689,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi
 **Kode setelah record dengan nama dan NIM**
 
 ```dart
-  var mahasiswa2 = ('Astrid Risa Widiana', a: 2241720250, b: true, 'last');
+  var mahasiswa2 = ('Sandra Devia Arge', a: 2241720222, b: true, 'last');
 
   print(mahasiswa2.$1); // Prints 'first'
   print(mahasiswa2.a); // Prints 2

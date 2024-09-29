@@ -212,8 +212,8 @@ Program akan mencetak angka mulai dari 10 hingga 20, tetapi melewatkan iterasi y
 **Kode Program**
 ```dart
 void main() {
-  String namaLengkap = "Astrid Risa Widiana";  
-  String NIM = "2241720250";  
+  String namaLengkap = "Sandra Devia Arge";  
+  String NIM = "2241720222";  
 
   // Fungsi untuk mengecek apakah suatu angka merupakan bilangan prima
   bool isPrime(int number) {
