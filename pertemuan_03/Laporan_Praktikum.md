@@ -239,4 +239,4 @@ void main() {
 
 **Hasil**
 
-![alt text](img/image-10.png)
+![alt text](img/tugas2.png)

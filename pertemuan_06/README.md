@@ -22,15 +22,15 @@
 ### Langkah 1 : Buat Project Baru
 Buatlah sebuah project flutter baru dengan nama layout_flutter. Atau sesuaikan style laporan praktikum yang Anda buat.
 
-
-
 ### Langkah 2 - Buka file lib/main.dart
 Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di text title.
+
+![hasil](/pertemuan_06/img/layout_flutter/kp1.png)
 
 ### Langkah 3 - Identifikasi layout diagram
 Langkah pertama adalah memecah tata letak menjadi elemen dasarnya:
 
-Identifikasi baris dan kolom.
+>Identifikasi baris dan kolom.
 Apakah tata letaknya menyertakan kisi-kisi (grid)?
 Apakah ada elemen yang tumpang tindih?
 Apakah UI memerlukan tab?
