@@ -37,6 +37,8 @@ Apakah UI memerlukan tab?
 Perhatikan area yang memerlukan alignment, padding, atau borders.
 Pertama, identifikasi elemen yang lebih besar. Dalam contoh ini, empat elemen disusun menjadi sebuah kolom: sebuah gambar, dua baris, dan satu blok teks.
 
+![hasil](/pertemuan_06/img/layout_flutter/kp3.png)
+
 ### Langkah 4 - Implementasi title row
 Pertama, Anda akan membuat kolom bagian kiri pada judul. Tambahkan kode berikut di bagian atas metode build() di dalam kelas MyApp:
 
@@ -46,12 +48,17 @@ Pertama, Anda akan membuat kolom bagian kiri pada judul. Tambahkan kode berikut 
 
 /* soal 1 */ Letakkan widget Column di dalam widget Expanded agar menyesuaikan ruang yang tersisa di dalam widget Row. Tambahkan properti crossAxisAlignment ke CrossAxisAlignment.start sehingga posisi kolom berada di awal baris.
 
+![hasil](/img/layout_flutter/kp4-1.png)
+
 /* soal 2 */ Letakkan baris pertama teks di dalam Container sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks ‘Batu, Malang, Indonesia' di dalam Column, set warna menjadi abu-abu.
+
+![hasil](/img/layout_flutter/kp4-2.png)
 
 /* soal 3 */ Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection seperti berikut:
 
 ---
 
+![Hasil](/img/layout_flutter/kp4-3.png)
 ## Praktikum 2 - Impementasi button row
 
 ### Langkah 1 - Buat method Column _buildButtonColumn
@@ -102,25 +109,16 @@ BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin teta
 Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
 
 ---
+
+![Hasil](/img/layout_flutter/hasil1.png)
+
 ## Tugas Praktikum 1
+![Hasil](/img/basic_layout/image.png)
 
-
----
-## Praktikum 5 - Membangun Navigasi di Flutter
-
-### Langkah 1: Siapkan project baru
-
-### Langkah 2: Mendefinisikan Route
-
-### Langkah 3: Lengkapi Kode di main.dart
-
-### Langkah 4: Membuat data model
-
-### Langkah 5: Lengkapi kode di class HomePage
-
-### Langkah 6: Membuat ListView dan itemBuilder
-
-### Langkah 7: Menambahkan aksi pada ListView
+Hasil
+![Hasil](/img/basic_layout/pq.png)
 
 ---
 ## Tugas Praktikum 2
+
+![hasil](/img/belanja/hasil%20akhir.png)
