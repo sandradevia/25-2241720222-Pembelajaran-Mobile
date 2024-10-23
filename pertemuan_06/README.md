@@ -48,17 +48,17 @@ Pertama, Anda akan membuat kolom bagian kiri pada judul. Tambahkan kode berikut 
 
 /* soal 1 */ Letakkan widget Column di dalam widget Expanded agar menyesuaikan ruang yang tersisa di dalam widget Row. Tambahkan properti crossAxisAlignment ke CrossAxisAlignment.start sehingga posisi kolom berada di awal baris.
 
-![hasil](/img/layout_flutter/kp4-1.png)
+![hasil](/pertemuan_06/img/layout_flutter/kp4-1.png)
 
 /* soal 2 */ Letakkan baris pertama teks di dalam Container sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks ‘Batu, Malang, Indonesia' di dalam Column, set warna menjadi abu-abu.
 
-![hasil](/img/layout_flutter/kp4-2.png)
+![hasil](/pertemuan_06/img/layout_flutter/kp4-2.png)
 
 /* soal 3 */ Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection seperti berikut:
 
 ---
 
-![Hasil](/img/layout_flutter/kp4-3.png)
+![Hasil](/pertemuan_06/img/layout_flutter/kp4-3.png)
 ## Praktikum 2 - Impementasi button row
 
 ### Langkah 1 - Buat method Column _buildButtonColumn
@@ -110,15 +110,15 @@ Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karen
 
 ---
 
-![Hasil](/img/layout_flutter/hasil1.png)
+![Hasil](/pertemuan_06/img/layout_flutter/hasil1.png)
 
 ## Tugas Praktikum 1
-![Hasil](/img/basic_layout/image.png)
+![Hasil](/pertemuan_06/img/basic_layout/image.png)
 
 Hasil
-![Hasil](/img/basic_layout/pq.png)
+![Hasil](/pertemuan_06/img/basic_layout/pq.png)
 
 ---
 ## Tugas Praktikum 2
 
-![hasil](/img/belanja/hasil%20akhir.png)
+![hasil](/pertemuan_06/img/belanja/hasil%20akhir.png)
