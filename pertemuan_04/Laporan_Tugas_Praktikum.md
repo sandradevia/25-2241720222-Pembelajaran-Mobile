@@ -65,7 +65,7 @@ final List<String?> list = List<String?>.filled(5, null);
 
 **Hasil**
 
-![alt text](img/image2.png)
+![alt text](img/p1.png)
 
 **Penjelasan**
 > final list = List.filled(5, null): Membuat list dengan panjang 5, di mana semua elemennya bernilai null.
@@ -310,7 +310,7 @@ var mhs1 = Map<String, String>();
 
 ```
 **Hasil**
-![alt text](img/image8.png)
+![alt text](img/p2.png)
 
 
 ### **Praktikum 4: Eksperimen Tipe Data List: Spread dan Control-flow Operators**
@@ -647,7 +647,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Inisialisasi field nama
 ```
 **Hasil**
 
-![alt text](img/image26.png)
+![alt text](img/p3.png)
 
 **Penjelasan**
 
@@ -676,7 +676,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi
 
 **Hasil**
 
-![alt text](img/image27.png)
+![alt text](img/p4.png)
 
 **Penjelasan**
 
@@ -700,7 +700,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi
 
 **Hasil**
 
-![alt text](img/image28.png)
+![alt text](img/p4.png)
 
 ## **2. Jelaskan yang dimaksud Functions dalam bahasa Dart!**
 

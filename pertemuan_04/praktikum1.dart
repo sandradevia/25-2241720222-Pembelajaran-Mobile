@@ -11,8 +11,8 @@ void main() {
 
 final List<String?> list = List<String?>.filled(5, null); // Membuat list dengan panjang 5, default nilainya null
 
-  list[1] = "Astrid Risa Widiana";  // Mengisi elemen index ke-1 dengan nama
-  list[2] = "2241720250";   // Mengisi elemen index ke-2 dengan NIM
+  list[1] = "Sandra Devia Arge";  // Mengisi elemen index ke-1 dengan nama
+  list[2] = "2241720222";   // Mengisi elemen index ke-2 dengan NIM
 
   print(list.length);  // Mencetak panjang list, seharusnya 5
   print(list[1]);      // Mencetak nama di index ke-1

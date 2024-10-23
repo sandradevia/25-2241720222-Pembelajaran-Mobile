@@ -1,4 +1,4 @@
-void main(){
+void main() {
   var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
   print(halogens);
 
@@ -7,13 +7,13 @@ void main(){
   var names3 = {}; // Creates a map, not a set.
 
   // Menambahkan elemen menggunakan .add()
-  names1.add('Astrid Risa Widiana');
-  names1.add('2241720250');
+  names1.add('Sandra Devia Arge');
+  names1.add('2241720222');
 
   // Menambahkan elemen menggunakan .addAll()
-  names2.addAll({'Astrid Risa Widiana', '2241720250'});
+  names2.addAll({'Sandra Devia Arge', '2241720222'});
 
-    print(names1);
-    print(names2);
-    print(names3);
+  print(names1);
+  print(names2);
+  print(names3);
 }
