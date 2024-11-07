@@ -115,7 +115,7 @@ Tambahkan kode seperti berikut pada bagian try / catch agar dapat menampilkan ha
 
 **lib/widget/takepicture_screen.dart**
 
-![hasil](/pertemuan_09/img/1.mp4)
+![hasil](/pertemuan_09/img/1.gif)
 
 ## Praktikum 2 - Membuat photo filter carousel
 
@@ -179,11 +179,12 @@ Jika diperlukan, beberapa widget yang telah Anda buat sebelumnya, memerlukan kod
 ![hasil](/pertemuan_09/img/t2.png)
 ![hasil](/pertemuan_09/img/t3.png)
 **hasil**
-![hasil](/pertemuan_09/img/3.mp4)
+![hasil](/pertemuan_09/img/3.gif)
 3. Jelaskan maksud void async pada praktikum 1?
 >Jawaban : void async dipakai untuk membuat fungsi berjalan secara asynchronous, yaitu fungsi yang dapat berjalan beriringan dengan fungsi lain. Artinya, fungsi ini tidak perlu menunggu proses yang sedang berlangsung selesai dulu untuk melanjutkan ke kode berikutnya.
 
 4. Jelaskan fungsi dari anotasi @immutable dan @override ?
 >Jawaban : 
+>
 >`@immutable` digunakan untuk membuat sebuah class menjadi tidak dapat diubah setelah dibuat. Class ini disebut immutable, yang berarti nilai-nilainya tetap dan tidak memiliki setter untuk mengubah nilai setelah pembuatan.
 >`@override` digunakan untuk menunjukkan bahwa method dalam class tersebut adalah method yang berasal dari superclass dan telah diubah atau disesuaikan dalam class ini.
