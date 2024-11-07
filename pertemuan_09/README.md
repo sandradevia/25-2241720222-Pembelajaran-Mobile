@@ -38,7 +38,6 @@ path → membuat path untuk mendukung berbagai platform.
 
 Untuk menambahkan dependensi plugin, jalankan perintah flutter pub add seperti berikut di terminal:
 
-![hasil](/pertemuan_09/img/)
 
 #### Langkah 3: Ambil Sensor Kamera dari device
 Selanjutnya, kita perlu mengecek jumlah kamera yang tersedia pada perangkat menggunakan plugin camera seperti pada kode berikut ini. Kode ini letakkan dalam void main().
@@ -175,8 +174,10 @@ Jika diperlukan, beberapa widget yang telah Anda buat sebelumnya, memerlukan kod
 
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
 
-![hasil](/pertemuan_09/img/t1.png)
-![hasil](/pertemuan_09/img/t2.png)
+![hasil](/pertemuan_09/img/t1.png),
+
+![hasil](/pertemuan_09/img/t2.png),
+
 ![hasil](/pertemuan_09/img/t3.png)
 **hasil**
 ![hasil](/pertemuan_09/img/3.gif)
