@@ -166,7 +166,7 @@ Terakhir, kita impor widget PhotoFilterCarousel ke main seperti kode berikut ini
 #### Troubleshoot
 Jika diperlukan, beberapa widget yang telah Anda buat sebelumnya, memerlukan kode import berikut ini.
 
-![hasil](/pertemuan_09/img/2.mp4)
+![hasil](/pertemuan_09/img/2.gif)
 
 ## **Tugas Prakrikum**
 -----
