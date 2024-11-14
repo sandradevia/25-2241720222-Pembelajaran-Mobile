@@ -6,7 +6,9 @@ class Plan {
 
   const Plan({this.name = '', this.tasks = const []});
   // Langkah 3 praktikum 2
-  int get completedCount => tasks.where((task) => task.complete).length;
+  int get completedCount => tasks
+      .where((task) => task.complete)
+      .length;
 
   String get completenessMessage =>
       '$completedCount out of ${tasks.length} tasks';
