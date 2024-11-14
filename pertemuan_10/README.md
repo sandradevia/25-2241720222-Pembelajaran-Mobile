@@ -223,7 +223,7 @@ void dispose() {
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!     
 **Jawab:**  
 
-    ![alt text](../img/HP1L9.gif)       
+  ![hasil](/pertemuan_10/img/image1.gif)      
 
 5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?        
 **Jawab:**      
@@ -300,7 +300,6 @@ class Plan {
 ### Langkah 4: Pindah ke PlanScreen     
 Edit PlanScreen agar menggunakan data dari **PlanProvider**. Hapus deklarasi variabel **plan** (ini akan membuat error). Kita akan perbaiki pada langkah 5 berikut ini. Edit pada folder **views** di file **plan_screen.dart**.  
 
-![alt text](../img/image2.png)
 
 ### Langkah 5: Edit method _buildTaskTile       
 Tambahkan BuildContext sebagai parameter dan gunakan PlanProvider sebagai sumber datanya.Edit pada folder **views** di file **plan_screen.dart**. Edit bagian kode seperti berikut. 
@@ -417,7 +416,7 @@ Widget build(BuildContext context) {
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!   
 **Jawab:** 
 
-    ![alt text](../img/HP2L9.gif)
+    ![hasil](/pertemuan_10/img/image2.gif)
 
 ## Praktikum 3: Membuat State di Multiple Screens   
 ### Langkah 1: Edit PlanProvider 
@@ -692,8 +691,6 @@ PlanScreen(plan: plan,)));
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.   
 
 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
-![alt text](image.png)
-
     **Jawab:**    
 * MaterialApp: Menginisialisasi aplikasi dan menjadi widget root yang membungkus seluruh aplikasi.    
 * PlanProvider: Berfungsi menyimpan data terkait plan yang digunakan di dalam aplikasi, untuk mengakses data di seluruh widget.
@@ -712,4 +709,4 @@ PlanScreen(plan: plan,)));
 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!    
 **Jawab:**
 
-    ![alt text](../img/HP3L14.gif)
+    ![hasil](/pertemuan_10/img/image3.gif)
