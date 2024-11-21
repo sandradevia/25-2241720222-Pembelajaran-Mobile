@@ -179,7 +179,7 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 `substring` dipakai untuk mengambil bagian tertentu dari sebuah string berdasarkan indeksnya. Sementara itu, `catchError` digunakan untuk menangkap error yang muncul saat kode dijalankan.
 
 
-![alt](../../docs/pertemuan_11/7.gif)
+![hasil](/pertemuan_11/img/gif/soal3.gif)
 
 </details>
 
@@ -239,7 +239,7 @@ Menambahkan kode untuk memanggil method `count()` pada ElevatedButton.
 
 Menjalankan aplikasi.
 
-![hasil]()
+![hasil](/pertemuan_11/img/gif/langkah%204.gif)
 
 ## Soal 4
 Jelaskan maksud kode langkah 1 dan 2 tersebut!
@@ -296,7 +296,7 @@ getNumber().then((value) {
 
 ### Langkah 4: Run
 
-![hasil](../../docs/pertemuan_11/16.gif)
+![hasil](/pertemuan_11/img/gif/langkah4soal5.gif)
 
 ## Soal 5
 
@@ -315,7 +315,7 @@ Kode ini menggunakan Completer untuk mengatur penyelesaian (completion) dari seb
 
 Mengganti atau membuat calculate2().
 
-![ahasillt](/pertemuan_11/img/img14.png)
+![hasil](/pertemuan_11/img/img14.png)
 
 ### Langkah 6: Pindah ke onPressed()
 
@@ -326,7 +326,7 @@ Mengganti isi kode onPressed() pada ElevatedButton.
 ## Soal 6
 Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 
-![hasil](../../docs/pertemuan_11/19.gif)
+![hasil](/pertemuan_11/img/gif/langkah4soal5.gif)
 
 >**Jawaban**
 >Pada **langkah** 2, kode menggunakan `Completer` untuk mengelola penyelesaian (completion) dari sebuah Future secara manual, tetapi tidak menyertakan mekanisme penanganan error. Artinya, jika terjadi kesalahan, kode ini tidak akan menangkap atau mengelolanya.
@@ -355,15 +355,14 @@ Mengedit kode onPressed() pada ElevatedButton.
 
 ### Langkah 3: Run
 
-Hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
-
+Hasilnya muncul dalam 3 detik berupa angka 6, lebih cepat dibandingkan praktikum sebelumnya yang membutuhkan waktu hingga 9 detik
 ## Soal 7
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README
 
 ### Jawaban
 
-![hasil](../../docs/pertemuan_11/22.gif)
+![hasil](/pertemuan_11/img/gif/soal6.gif)
 
 ### Langkah 4: Ganti variabel futureGroup
 
@@ -417,6 +416,7 @@ Menjalankan aplikasi.
 ## Soal 9
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![hasil](/pertemuan_11/img/gif/soal9.gif)
 
 ### Jawaban
 
@@ -552,36 +552,49 @@ Panggil screen baru tersebut di file main.dart.
 
 Menjalankan aplikasi.
 
-![alt](../../docs/pertemuan_11/35.png)
+![hasil](/pertemuan_11/img/img41.png)
 
 ### Langkah 8: Tambahkan animasi loading
 
 Menambahkan animasi loading.
 
-![alt](../../docs/pertemuan_11/36.png)
+```dart
+  @override
+  Widget build(BuildContext context) {
+    final myWidget = myPosition == ''
+    ? const CircularProgressIndicator()
+    : Text(myPosition);
+
+      return Scaffold(
+      appBar: AppBar(title: const Text('Current Location-Astrid')),
+      body: Center(child:myWidget),
+    );
+  }
+```
 
 ## Soal 12
 Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+
+```dart
+Future<Position> getPosition() async {
+    await Geolocator.requestPermission();
+    await Geolocator.isLocationServiceEnabled();
+    await Future.delayed(const Duration(seconds: 3));
+    Position? position = await Geolocator.getCurrentPosition();
+    return position;
+  }
+```
 
 Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
-## Jawaban
-
-Menambahkan delay pada method getPosition() dengan kode `await Future.delayed(const Duration(seconds: 3));`.
-
-![alt](../../docs/pertemuan_11/37.png)
-
-Saya mendapatkan koordinat GPS ketika run di browser. Hal ini dikarenakan browser memiliki akses ke GPS sehingga dapat menampilkan koordinat GPS.
-
-Hasil run di browser.
-
-![alt](../../docs/pertemuan_11/40.gif)
+> **Jawaban**
+Tidak, GPS tidak akan bekerja di browser karena browser tidak memiliki izin untuk mengakses layanan GPS perangkat secara langsung seperti halnya pada device fisik atau emulator mobile.
 
 Hasil run di device.
 
-![alt](../../docs/pertemuan_11/38.gif)
+![hasil](/pertemuan_11/img/gif/soal%2012.gif)
 
 </details>
 
@@ -594,27 +607,56 @@ Hasil run di device.
 
 ### Langkah 1: Modifikasi method getPosition()
 
-Menambahkan kode `await Future.delayed(const Duration(seconds: 3));` pada method getPosition().
-
-![alt](../../docs/pertemuan_11/41.png)
+![hasil](/pertemuan_11/img/img31.png)
 
 ### Langkah 2: Tambah variabel
 
 Menambahkan variabel position di class _LocationScreenState.
 
-![alt](../../docs/pertemuan_11/42.png)
+![hasil](/pertemuan_11/img/img32.png)
 
 ### Langkah 3: Tambah initState()
 
-Set variabel position pada initState().
+Tambah method ini dan set variabel position
 
-![alt](../../docs/pertemuan_11/43.png)
+```dart
+  @override
+  void initState() {
+    super.initState();
+    position = getPosition();
+}
+```
+![hasil](/pertemuan_11/img/img33.png)
 
 ### Langkah 4: Edit method build()
 
 Mengedit method build().
 
-![alt](../../docs/pertemuan_11/44.png)
+```dart
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(title: const Text('Current Location - Sandra')),
+    body: Center(
+      child: FutureBuilder<Position>(
+        future: position,
+        builder: (BuildContext, AsyncSnapshot<Position> snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator();
+          } else if (snapshot.connectionState == ConnectionState.done) {
+            return Text(
+              snapshot.data.toString()
+            );
+          }
+          else {
+            return const Text('');
+          }
+        },
+      ),
+    ),
+  );
+}
+```
 
 ## Soal 13
 
@@ -626,24 +668,51 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Tidak, tidak ada perbedaan UI dengan praktikum sebelumnya. Hal ini dikarenakan menggunakan FutureBuilder yang akan menampilkan widget sesuai dengan status Future.
 
-![alt](../../docs/pertemuan_11/45.gif)
+![hasil](/pertemuan_11/img/gif/soal13.gif)
 
 ### Langkah 5: Tambah handling error
 
 Menambahkan handling error.
 
-![alt](../../docs/pertemuan_11/46.png)
+```dart
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(title: const Text('Current Location - Sandra')),
+    body: Center(
+      child: FutureBuilder<Position>(
+        future: position,
+        builder: (BuildContext, AsyncSnapshot<Position> snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator();
+          } else if (snapshot.connectionState == ConnectionState.done) {
+            return Text(
+              snapshot.data.toString()
+            );
+          } else if (snapshot.connectionState == ConnectionState.done) {
+            if (snapshot.hasError) {
+              return const Text('Something terrible happened!');
+            }
+            return Text(snapshot.data.toString());
+          }
+          else {
+            return const Text('');
+          }
+        },
+      ),
+    ),
+  );
+}
+```
 
 ## Soal 14
 Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
-## Jawaban
-
-Tidak, tidak ada perbedaan UI dengan langkah sebelumnya. Hal ini dikarenakan menggunakan FutureBuilder yang akan menampilkan widget sesuai dengan status Future dan menambahkan handle error jika terjadi error.
-
-![alt](../../docs/pertemuan_11/47.gif)
+>**Jawaban**
+Tidak ada perubahan pada tampilan UI dibandingkan langkah sebelumnya. Hal ini karena menggunakan FutureBuilder, yang akan menampilkan widget berdasarkan status Future dan sudah dilengkapi dengan penanganan error jika terjadi kesalahan.
+![hasil](/pertemuan_11/img/gif/7.gif)
 
 </details>
 
@@ -657,13 +726,13 @@ Tidak, tidak ada perbedaan UI dengan langkah sebelumnya. Hal ini dikarenakan men
 
 Membuat file navigation_first.dart.
 
-![alt](../../docs/pertemuan_11/48.png)
+![hasil](/pertemuan_11/img/img34.png)
 
 ### Langkah 2: Isi kode navigation_first.dart
 
 Isi kode di dalam class NavigationFirstScreen.
 
-![alt](../../docs/pertemuan_11/49.png)
+![hasil](/pertemuan_11/img/img35.png)
 
 ## Soal 15
 
@@ -672,15 +741,21 @@ Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerja
 Silakan ganti dengan warna tema favorit Anda.
 
 ## Jawaban
-Mengubah title dengan nama panggilan dan mengubah warna tema menjadi warna oranye.
 
-![alt](../../docs/pertemuan_11/50.png)
+![hasil](/pertemuan_11/img/img40.png)
 
 ### Langkah 3: Tambah method di class _NavigationFirstState
 
 Menambahkan method `_navigateAndGetColor` di dalam class _NavigationFirstState.
 
-![alt](../../docs/pertemuan_11/51.png)
+```dart
+Future _navigateAndGetColor(BuildContext context) async {
+   color = await Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const NavigationSecond()),) ?? Colors.blue;
+   setState(() {});
+   });
+}
+```
 
 ### Langkah 4: Buat file baru navigation_second.dart
 
@@ -690,13 +765,62 @@ Membuat file navigation_second.dart.
 
 Membuat class NavigationSecond dengan StatefulWidget.
 
-![alt](../../docs/pertemuan_11/52.png)
+```dart
+import 'package:flutter/material.dart';
+
+class NavigationSecond extends StatefulWidget {
+  const NavigationSecond({super.key});
+
+  @override
+  State<NavigationSecond> createState() => _NavigationSecondState();
+}
+
+class _NavigationSecondState extends State<NavigationSecond> {
+  @override
+  Widget build(BuildContext context) {
+    Color color;
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Navigation Second - Sandra'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ElevatedButton(
+              child: const Text('Red'),
+              onPressed: () {
+                color = Colors.red.shade700;
+                Navigator.pop(context, color);
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Green'),
+              onPressed: () {
+                color = Colors.green.shade700;
+                Navigator.pop(context, color);
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Blue'),
+              onPressed: () {
+                color = Colors.blue.shade700;
+                Navigator.pop(context, color);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
 
 ### Langkah 6: Edit main.dart
 
 Lakukan edit properti home.
 
-![alt](../../docs/pertemuan_11/53.png)
+`home: const NavigationFirst(),`
 
 ### Langkah 7: Run
 
@@ -708,13 +832,12 @@ Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
-## Jawaban
-
-Ketika button change color diklik, maka akan menampilkan halaman kedua, di halaman kedua terdapat 3 button yang masing-masing akan mengubah warna background pada halaman pertama.
+>**Jawaban**
+Ketika tombol Change Color diklik, pengguna akan diarahkan ke halaman kedua. Di halaman kedua, ada 3 tombol yang masing-masing berfungsi untuk mengubah warna latar belakang halaman utama sesuai dengan warna yang dipilih.
 
 Hasil run aplikasi.
 
-![alt](../../docs/pertemuan_11/54.gif)
+![hasil](/pertemuan_11/img/gif/8.gif)
 
 </details>
 
@@ -728,30 +851,95 @@ Hasil run aplikasi.
 ### Langkah 1: Buat file baru navigation_dialog.dart
 
 Membuat file navigation_dialog.dart.
+![hasil](/pertemuan_11/img/img39.png)
 
 ### Langkah 2: Isi kode navigation_dialog.dart
 
 menambahkan kode di dalam class NavigationDialogScreen.
 
-![alt](../../docs/pertemuan_11/55.png)
+```dart
+import 'package:flutter/material.dart';
+
+class NavigationDialogScreen extends StatefulWidget {
+  const NavigationDialogScreen({super.key});
+
+  @override
+  State<NavigationDialogScreen> createState() => _NavigationDialogScreenState();
+}
+
+class _NavigationDialogScreenState extends State<NavigationDialogScreen> {
+  Color color = Colors.blue.shade700;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: color,
+      appBar: AppBar(
+        title: const Text('Navigation Dialog Screen'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: const Text('Change Color'),
+          onPressed: () {
+          },
+        ),
+      ),
+    );
+  }
+}
+```
 
 ### Langkah 3: Tambah method async
 
 Menambahkan method `_showColorDialog` dengan async.
 
-![alt](../../docs/pertemuan_11/56.png)
+```dart
+  _showColorDialog(BuildContext context) async {
+  await showDialog(
+    barrierDismissible: false,
+    context: context,
+    builder: (_) {
+      return AlertDialog(
+        title: const Text('Very important question'),
+        content: const Text('Please choose a color'),
+        actions: <Widget>[
+          TextButton(
+            child: const Text('Red'),
+            onPressed: () {
+              Navigator.pop(context, Colors.red.shade700);
+            },
+          ),
+          TextButton(
+            child: const Text('Green'),
+            onPressed: () {
+              Navigator.pop(context, Colors.green.shade700);
+            },
+          ),
+          TextButton(
+            child: const Text('Blue'),
+            onPressed: () {
+              Navigator.pop(context, Colors.blue.shade700);
+            },
+          ),
+        ],
+      );
+    },
+  );
+    setState(() {});
+  }
+```
 
 ### Langkah 4: Panggil method di ElevatedButton
 
 Panggil method `_showColorDialog` di ElevatedButton.
 
-![alt](../../docs/pertemuan_11/57.png)
+![hasil](/pertemuan_11/img/img38.png)
 
 ### Langkah 5: Edit main.dart
 
 Lakukan edit properti home.
 
-![alt](../../docs/pertemuan_11/58.png)
+`home: const NavigationDialogScreen(),`
 
 ### Langkah 6: Run
 
@@ -763,18 +951,15 @@ Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
 Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
 
-Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
-
-## Jawaban
-
-Ketika button change color diklik, maka akan menampilkan dialog yang berisi 3 button yang masing-masing akan mengubah warna background pada halaman pertama.
+>**Jawaban**
+Saat tombol `Change Color` diklik, akan muncul dialog yang menampilkan 3 tombol. Setiap tombol tersebut berfungsi untuk mengubah warna latar belakang halaman utama sesuai dengan warna yang dipilih.
 
 Mengganti warna menjadi warna favorit.
 
-![alt](../../docs/pertemuan_11/59.png)
+![hasil](/pertemuan_11/img/img37.png)
 
 Hasil run aplikasi.
 
-![alt](../../docs/pertemuan_11/60.gif)
+![hasil](/pertemuan_11/img/gif/9.gif)
 
 </details>
